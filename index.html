@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nethaji Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/nicon.png">
+    <script src="https://kit.fontawesome.com/df063fd988.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="img/nn.png" class="logo">
+                <ul class="sidebar">
+                    <li onclick=hideSidebar()><img src="img/close.svg"></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+
+                    <li><a href="#services">Project</a></li>
+                    <li><a href="#contac">Contact</a></li>
+                </ul>
+                <ul>
+
+                    <li class="hideOnMobile"><a href="#">Home</a></li>
+                    <li class="hideOnMobile"><a href="#about">About</a></li>
+
+                    <li class="hideOnMobile"><a href="#services">Project</a></li>
+                    <li class="hideOnMobile"><a href="#contac">Contact</a></li>
+                    <li class="menu-button" onclick=showSidebar()><img src="img/menu.svg"></li>
+                </ul>
+            </nav>
+
+            <div class="header-text">
+
+                <h1 > Hi, I'm <span>Nethaji K</span></h1>
+                <p class="header1">Software Developer</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/ab.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="para">Hi I'm Nethaji recently graduated in Msc Computer Science and Intreseted in Web
+                        development skilled in HTML,CSS,Javascrip and actively enhancing my skill in Java and eager to
+                        contribute my skills in a dynamic tech environment. Committed to contineous learning and problem
+                        solving.</p>
+                    <a id="res" href="https://drive.google.com/file/d/1BDPegrSwe8e9vDN5Zd3RIjaRpCIc5CBN/view?usp=drivesdk"><button class="btn">View
+                            Resume</button></a>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML</span></li>
+                            <li><span>CSS & Bootstrap</span></li>
+                            <li><span>JavaScript</span></li>
+                            <li><span>Java</span></li>
+                            <li><span>Git & GitHub</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022 - 2024</span><br>
+                            <li class="edu1">Msc Computer Science</li>
+                            </li>
+                            <li><span> SRM Institue of Science and Technology - KTR</span></li>
+                            <br>
+                            <li><span>2019 - 2022</span><br>
+                            <li class="edu2">Bsc Computer Science</li>
+                            </li>
+                            <li><span>Muthurangam Govt Arts and Science College - Vellore</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Project</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-file-code"></i>
+                    <h2>Spotify Clone</h2>
+                    <p>I tried to clone Spotify by using Html css and JavaScript </p><br />
+                    <p>This is a simple replica of spotify we can play song and switch songs </p>
+                    <a href="https://nethajikumar.github.io/spotify-clone/"><button class="btn1">Live Demo</button></a>
+                </div>
+                <!-- <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>plant design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos impedit,
+                         voluptatibus corrupti tempore ipsa eius minus?
+                          Dicta maiores ab repellendus.</p>
+                      <a href="#">learn more</a>    
+                </div>-->
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Plant Disease Classification</h2>
+                    <p>We can classify healthy and unhealthy crop using this model </p><br />
+                    <p>This is a Deep learning technique to find plant health status</p>
+                    <a href="https://drive.google.com/file/d/1-nhONvztOPLl6SYOSkh45naDL_CQyG9K/view?usp=drivesdk"><button
+                            class="btn2">Learn More</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="contact-container">
+        <h2 class="cont" id="contac">Contact Me</h2>
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/nethaji-k-9271741b3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                target="_blank" class="icon linkedin">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="mailto:nethajikumar2002@gmail.com" class="icon gmail">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a  class="icon github" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2025 Nethaji K <span style="color: red;">&hearts;</span> All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
